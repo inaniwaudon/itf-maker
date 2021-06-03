@@ -3,6 +3,7 @@
 <head>
 	<title>IMAGINE THE FUTURE.maker</title>
 	<link rel="stylesheet" href="https://use.typekit.net/suf2wdc.css">
+	<meta charset="utf-8"/>
 	<meta property="og:site_name" content="IMAGINE THE FUTURE.maker" />
 	<meta property="og:title" content="IMAGINE THE FUTURE.maker" />
 	<meta property="og:type" content="website" />
@@ -104,7 +105,7 @@ window.onload = () =>  {
 
 	for (let i = 0; i < textLine.length; i++) {
 		y = padding + fontSize * 1.75 * i;
-		context.fillText(textLine[i], padding, y);
+		context.fillText(textLine[i], padding, y - 80);
 		if (i == textLine.length - 1)
 			lastLineWidth = context.measureText(textLine[i]).width;
 	}
