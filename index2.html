@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<title>IMAGINE THE FUTURE.maker</title>
+	<link rel="stylesheet" href="https://use.typekit.net/suf2wdc.css">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8"/>
+	<meta property="og:site_name" content="IMAGINE THE FUTURE.maker" />
+	<meta property="og:title" content="IMAGINE THE FUTURE.maker" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://inaniwaudon.github.io/itf-maker/" />
+	<meta property="og:image" content="https://inaniwaudon.github.io/itf-maker/icon.png" />
+	<meta property="og:description" content="君もIMAGINE THE FUTURE.しよう！！"/>
+	<meta property="og:locale" content="ja_JP" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@kyoto_mast21">
+	<meta name="twitter:title" content="IMAGINE THE FUTURE.maker">
+	<meta name="twitter:description" content="君もIMAGINE THE FUTURE.しよう！！">
+	<meta name="twitter:image" content="https://inaniwaudon.github.io/itf-maker/icon.png">
+</head>
+
+<body>
+<script>
+const verbMap = ["DIE", "IMAGINE", "OVERSLEEP", "OVERWORK", "FORGET", "SUICIDE", "DROP", "MISS", "OBTAIN", "SUBSCRIBE", "FAIL", "TALK", "INCREASE", "PLAY", "SEX", "STOP", "CHANGE", "EDIT", "KILL", "ARISE", "OVERCOME", "MISTAKE", "MISUNDERSTAND", "OVERHEAR", "OVERLOOK", "UNDERGO", "SWEEP", "BROADCAST", "REBUIT", "QUIT", "OVERTAKE", "TEAR", "SEEK", "BITE", "BIND", "RING", "DREAM", "CONITAIN", "BELONG", "PUT", "HAVE", "GO", "GET", "GAIN", "LOOK"];
+const nounMap = ["FUTURE", "PAST", "TWINS", "RAMEN", "TSUKUBA", "DREAM", "TWITTER", "PROFECCER", "TRAIN", "NGT", "SWIFT", "PYTHON", "KLIS", "TX", "KDB", "CODE", "ZOZO", "TUITION", "GAKUHI", "CREDIT", "MAST", "DREAM", "COINS", "MEDS", "MED", "HUDS", "BIOL", "SCS", "MONEY", "CHEM", "COENS", "EARTH", "PHYS", "ESYS", "CCC", "MATH", "POPS"];
+
+window.onload = () =>  {
+	const verbNo = Math.floor(Math.random() * verbMap.length);
+	const nounNo = Math.floor(Math.random() * nounMap.length);
+	const verb = verbMap[verbNo];
+	const noun = nounMap[nounNo];
+	location.href = "pages/" + verb + "-" + noun + ".html";
+}
+</script>
+</body>
+</html>

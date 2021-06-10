@@ -1,0 +1,27 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: din-2014, sans-serif;
+	font-weight: 800;
+}
+main {
+	margin: 2rem 3rem;
+}
+h2 {
+	font-size: 3rem;
+	margin: 0 0 1rem 0;
+}
+#reload {
+	color: #03c3da;
+	text-decoration: none;
+	padding: 0.4rem;
+	border: solid 1px #03c3da;
+	border-radius: 2px;
+	margin-right: 2rem;
+	font-size: 1.2rem;
+}
+img {
+	width : calc(100% - 6rem);
+	max-width: 800px;
+	margin-bottom: 1rem;
+}
